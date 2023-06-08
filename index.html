@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class=" startPage bg-primary w-100 h-100 position-absolute ">
+        <div class="startPageContent d-flex justify-content-center align-items-center">
+            <button class="p-3 rounded start-button text-primary bg-white">Start Quiz</button>
+        </div>
+    </div>
+    <div class= " msgPage bg-primary w-100 h-100 position-absolute ">
+        <div class="msgPageContent bg-white p-4 rounded ">
+            <div class="msgHead ">
+                <h3>Some Rules of this Quiz</h3>
+            </div>
+            <div class="msgContent pt-2 pb-2">
+                <div>
+                    1. You Will have only 15 seconde per each question.
+                </div>
+                <div>2. Once you select your answer, you cant reselect.</div>
+                <div>3. You can't select any option once time goes off.</div>
+                <div>4. You can't exit form the Quiz while you're playing.</div>
+                <div>5. You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="msgButtons pt-3 d-flex justify-content-end align-items-center">
+                <button class=" rounded me-3 text-primary bg-white exit-button">Exit Quiz</button>
+                <button class="rounded text-white bg-primary continue-button">Continue</button>
+            </div>
+        </div>
+    </div>
+    <div class=" questions bg-primary w-100 h-100 position-absolute ">
+        <div class="questions-content bg-white p-4 rounded">
+            <div class="questionsHeader d-flex justify-content-between align-items-center">
+                <h4 class="me-5">Awesome Quiz Application</h4>
+                <div class="questionScore">Score <span class="score">0</span> of 5</div>
+            </div>
+            <div class="question pt-3 pb-2">
+                
+                <h3 class="mb-4"><span class="questionNumber">3</span>. <span class="questionText"></span></h3>
+                <ul class="answers">
+                    <li class="answer "></li>
+                    <li class="answer "></li>
+                    <li class="answer "></li>
+                    <li class="answer "></li>
+                </ul>
+            </div>
+            <div class="rightAnswer text-center text-primary mt-3"></div>
+            <div class="questionsFooter d-flex justify-content-between align-items-center pt-3 ">
+                <div><span class="questionStart">2</span> of <span class="questionEnd">5</span> Questions</div>
+                <button class="text-white bg-primary rounded next-button">Next Question</button>
+            </div>
+        </div>
+    </div>
+    <div class=" result-message bg-primary w-100 h-100 position-absolute ">
+        <div class="result-content bg-white p-5 rounded">
+            <div class="icon d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-crown "></i>
+            </div>
+            <div class="result-text">
+                You have completed the quiz and you <br/>
+                do great , You got <span class="result">2</span> out of 5
+            </div>
+            <div class="result-buttons d-flex justify-content-center align-items-center">
+                <button class="text-white bg-primary rounded replay-button p-2">Replay Quiz</button>
+                <button class="text-primary bg-white rounded quit-button p-2">Quit Quiz</button>
+            </div>
+        </div>
+    </div>  
+<script src="main.js"></script>
+</body>
+</html>
